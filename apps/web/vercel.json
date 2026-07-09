@@ -1,0 +1,6 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "pnpm turbo run build --filter=@geniusgarage/web...",
+  "installCommand": "pnpm install",
+  "framework": "nextjs"
+}
