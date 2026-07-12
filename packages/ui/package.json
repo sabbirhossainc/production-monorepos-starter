@@ -4,6 +4,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
+    "./button": "./src/button.tsx",
     "./card": "./src/card.tsx"
   },
   "peerDependencies": {
