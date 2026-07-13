@@ -20,7 +20,7 @@ export function Button({
 
   const variantStyles = {
     primary: {
-      backgroundColor: "#0070f3",
+      backgroundColor: "#f3ef00",
       color: "white",
     },
     secondary: {

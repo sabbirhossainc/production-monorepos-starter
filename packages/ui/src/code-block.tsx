@@ -7,7 +7,7 @@ export function CodeBlock({ code, language = "javascript" }: CodeBlockProps) {
   return (
     <div
       style={{
-        backgroundColor: "#1e1e1e",
+        backgroundColor: "#333333",
         color: "#d4d4d4",
         padding: "1rem",
         borderRadius: "0.5rem",
