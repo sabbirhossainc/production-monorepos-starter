@@ -5,7 +5,9 @@
   "types": "./src/index.ts",
   "exports": {
     "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx"
+    "./card": "./src/card.tsx",
+    "./code-block": "./src/code-block.tsx",
+    "./snippet-card": "./src/snippet-card.tsx"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
