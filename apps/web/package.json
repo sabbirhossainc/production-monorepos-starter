@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build", 
+    "lint": "eslint ."
   },
   "dependencies": {
+    "@geniusgarage/eslint-config": "workspace:^",
+    "@geniusgarage/typescript-config": "workspace:^",
     "@geniusgarage/ui": "workspace:*",
     "next": "16.0.9",
     "react": "^19.0.0",
