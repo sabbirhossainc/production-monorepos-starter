@@ -17,12 +17,18 @@ importers:
 
   apps/snippet-manager:
     dependencies:
+      '@geniusgarage/eslint-config':
+        specifier: workspace:^
+        version: link:../../packages/eslint-config
+      '@geniusgarage/typescript-config':
+        specifier: workspace:^
+        version: link:../../packages/typescript-config
       '@geniusgarage/ui':
         specifier: workspace:^
         version: link:../../packages/ui
       next:
         specifier: 16.2.10
-        version: 16.2.10(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        version: 16.2.10(@babel/core@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       react:
         specifier: 19.2.4
         version: 19.2.4
@@ -51,6 +57,12 @@ importers:
 
   apps/web:
     dependencies:
+      '@geniusgarage/eslint-config':
+        specifier: workspace:^
+        version: link:../../packages/eslint-config
+      '@geniusgarage/typescript-config':
+        specifier: workspace:^
+        version: link:../../packages/typescript-config
       '@geniusgarage/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -82,6 +94,17 @@ importers:
       typescript:
         specifier: ^5
         version: 5.9.3
+
+  packages/eslint-config:
+    devDependencies:
+      eslint-config-next:
+        specifier: ^16.0.0
+        version: 16.2.10(@typescript-eslint/parser@8.63.0(eslint@9.39.4)(typescript@5.9.3))(eslint@9.39.4)(typescript@5.9.3)
+      eslint-config-prettier:
+        specifier: ^10.1.1
+        version: 10.1.8(eslint@9.39.4)
+
+  packages/typescript-config: {}
 
   packages/ui:
     dependencies:
@@ -1014,6 +1037,12 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  eslint-config-prettier@10.1.8:
+    resolution: {integrity: sha512-82GZUjRS0p/jganf6q1rEO25VSoHH0hKPCTrgillPjdI/3bgBhAE1QzHrHTizjpRvy6pGAvKjDJtk2pF9NDq8w==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
 
   eslint-import-resolver-node@0.3.10:
     resolution: {integrity: sha512-tRrKqFyCaKict5hOd244sL6EQFNycnMQnBe+j8uqGNXYzsImGbGUU4ibtoaBmv5FLwJwcFJNeg1GeVjQfbMrDQ==}
@@ -2901,6 +2930,10 @@ snapshots:
       - eslint-plugin-import-x
       - supports-color
 
+  eslint-config-prettier@10.1.8(eslint@9.39.4):
+    dependencies:
+      eslint: 9.39.4
+
   eslint-import-resolver-node@0.3.10:
     dependencies:
       debug: 3.2.7
@@ -3477,7 +3510,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  next@16.2.10(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  next@16.2.10(@babel/core@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
       '@next/env': 16.2.10
       '@swc/helpers': 0.5.15
@@ -3486,7 +3519,7 @@ snapshots:
       postcss: 8.4.31
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
-      styled-jsx: 5.1.6(react@19.2.4)
+      styled-jsx: 5.1.6(@babel/core@7.29.7)(react@19.2.4)
     optionalDependencies:
       '@next/swc-darwin-arm64': 16.2.10
       '@next/swc-darwin-x64': 16.2.10
@@ -3845,17 +3878,19 @@ snapshots:
 
   strip-json-comments@3.1.1: {}
 
+  styled-jsx@5.1.6(@babel/core@7.29.7)(react@19.2.4):
+    dependencies:
+      client-only: 0.0.1
+      react: 19.2.4
+    optionalDependencies:
+      '@babel/core': 7.29.7
+
   styled-jsx@5.1.6(@babel/core@7.29.7)(react@19.2.7):
     dependencies:
       client-only: 0.0.1
       react: 19.2.7
     optionalDependencies:
       '@babel/core': 7.29.7
-
-  styled-jsx@5.1.6(react@19.2.4):
-    dependencies:
-      client-only: 0.0.1
-      react: 19.2.4
 
   supports-color@7.2.0:
     dependencies:
