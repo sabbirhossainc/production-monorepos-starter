@@ -2,10 +2,10 @@
   "name": "geniusgarage",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
     "dev": "turbo dev",
     "build": "turbo build",
-    "lint": "turbo lint" 
+    "lint": "turbo lint"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

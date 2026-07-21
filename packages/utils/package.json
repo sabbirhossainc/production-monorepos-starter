@@ -7,12 +7,15 @@
     ".": "./src/index.ts"
   },
   "scripts": {
+    "build": "tsc --noEmit",
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@geniusgarage/typescript-config": "workspace:*",
+    "@eslint/js": "^9.39.4",
     "@geniusgarage/eslint-config": "workspace:*",
+    "@geniusgarage/typescript-config": "workspace:*",
     "eslint": "^9",
-    "typescript": "^5"
+    "typescript": "^5",
+    "typescript-eslint": "^8.65.0"
   }
 }
