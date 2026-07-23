@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "tsc --noEmit",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "vitest run"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
@@ -16,6 +17,7 @@
     "@geniusgarage/typescript-config": "workspace:*",
     "eslint": "^9",
     "typescript": "^5",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.65.0",
+    "vitest": "^4.1.10"
   }
 }
