@@ -6,7 +6,8 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "lint": "turbo lint",
-    "test": "turbo test"
+    "test": "turbo test",
+    "ci": "turbo build lint test"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
