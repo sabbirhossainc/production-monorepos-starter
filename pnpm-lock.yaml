@@ -121,6 +121,9 @@ importers:
       '@eslint/js':
         specifier: ^9.39.4
         version: 9.39.4
+      '@geniusgarage/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
       '@testing-library/jest-dom':
         specifier: ^7.0.0
         version: 7.0.0(@testing-library/dom@10.4.1)
