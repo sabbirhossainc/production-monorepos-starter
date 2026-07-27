@@ -7,7 +7,7 @@
     "build": "turbo build",
     "lint": "turbo lint",
     "test": "turbo test",
-    "ci": "turbo build lint test"
+    "ci": "turbo build lint test --filter=[origin/main]"
   },
   "devDependencies": {
     "prettier": "^3.2.5",

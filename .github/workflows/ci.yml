@@ -13,18 +13,30 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for git filtering
  
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
+        with:
+          version: 9
  
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: 'pnpm'
+        
+      - name: Cache Turborepo
+        uses: actions/cache@v3
+        with:
+          path: node_modules/.cache/turbo
+          key: ${{ runner.os }}-turbo-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-turbo-
  
       - name: Install dependencies
         run: pnpm install
  
-      - name: Run build, lint, and test
+      - name: Run build, lint, and test (changed packages only)
         run: pnpm run ci
