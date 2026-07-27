@@ -38,13 +38,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Run tasks
+      - name: Run tasks build, lint, and test
         run: |
           if [ "${{ github.ref }}" == "refs/heads/main" ]; then
-            pnpm run turbo build lint test
+            pnpm run ci
           else
-            pnpm run turbo build lint test --filter=[origin/main]
+            pnpm run ci --filter=[origin/main]
           fi
- 
-      - name: Run build, lint, and test (changed packages only)
-        run: pnpm run ci
