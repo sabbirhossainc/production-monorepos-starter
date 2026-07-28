@@ -1,0 +1,12 @@
+{
+  "folders": [
+    { "path": "apps/web", "name": "web" },
+    { "path": "apps/snippet-manager", "name": "snippet-manager" },
+    { "path": "apps/docs", "name": "docs" },
+    { "path": "packages/ui", "name": "ui" },
+    { "path": "packages/utils", "name": "utils" }
+  ],
+  "settings": {
+    "typescript.tsdk": "node_modules/typescript/lib"
+  }
+}
