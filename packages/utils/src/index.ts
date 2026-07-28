@@ -1,9 +1,6 @@
 export function formatDate(date: Date): string {
-   // Add a comment to invalidate cache
   return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
+    dateStyle: 'medium',  // Was 'long', fix to 'medium'
   }).format(date)
 }
  
