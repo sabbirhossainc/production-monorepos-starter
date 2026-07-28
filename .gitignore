@@ -34,3 +34,5 @@ yarn-error.log*
 
 # pnpm
 pnpm-lock.yaml
+
+.commandcode
