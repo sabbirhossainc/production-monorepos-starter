@@ -1,0 +1,25 @@
+{
+  "name": "@geniusgarage/docs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3002",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.x",
+    "react": "^18",
+    "react-dom": "^18",
+    "@geniusgarage/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@geniusgarage/typescript-config": "workspace:*",
+    "@geniusgarage/eslint-config": "workspace:*",
+    "typescript": "^5",
+    "tailwindcss": "^3",
+    "autoprefixer": "^10",
+    "postcss": "^8"
+  }
+}
