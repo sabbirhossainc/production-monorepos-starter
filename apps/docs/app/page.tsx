@@ -22,7 +22,7 @@ export default function Home() {
         <Card>
           <h2 className="text-2xl font-bold mb-4">Card</h2>
           <p className="mb-4">Container component with shadow and padding</p>
-          <p className="text-sm text-gray-600">You're looking at one!</p>
+          <p className="text-sm text-gray-600">You&apos;re looking at one!</p>
         </Card>
  
         <Card>
