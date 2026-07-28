@@ -1,7 +1,7 @@
 export interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
-  variant?: "primary" | "secondary";
+  variant?: 'primary' | 'secondary' | 'danger'  // Add 'danger'
 }
 
 export function Button({
@@ -28,6 +28,10 @@ export function Button({
       backgroundColor: "#f5f5f5",
       color: "#333",
       border: "1px solid #e5e7eb",
+    },  
+    danger: {
+      backgroundColor: "#ef4444",
+      color: "white",
     },
   };
 
