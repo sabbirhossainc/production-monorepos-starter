@@ -2,17 +2,26 @@
 * @geniusgarage/leads
 
 # Package ownership
-/packages/ui/ @geniusgarage/frontend-team
+# Design system components - reviewed by design team for consistency
+/packages/ui/ @geniusgarage/frontend-team @geniusgarage/design-team
+
+# Platform packages - critical infrastructure requiring platform team review
 /packages/typescript-config/ @geniusgarage/platform-team
 /packages/eslint-config/ @geniusgarage/platform-team
 /packages/utils/ @geniusgarage/platform-team
 
-# App ownership
-/apps/web/ @geniusgarage/marketing-team
+# App ownership - product teams own their apps
 /apps/snippet-manager/ @geniusgarage/product-team
+
+# App ownership - marketing teams own their apps
+/apps/web/ @geniusgarage/marketing-team
+
+# App ownership - platform teams own their apps
 /apps/docs/ @geniusgarage/docs-team
 
-# Infrastructure
+# Infrastructure - devops teams own this
 /.github/ @geniusgarage/devops-team
+
+# Infrastructure - platform teams own this
 /turbo.json @geniusgarage/platform-team
 /package.json @geniusgarage/platform-team
