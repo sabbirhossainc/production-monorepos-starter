@@ -14,7 +14,7 @@
     "ci": "turbo build lint test",
     "changeset": "changeset",
     "version": "changeset version",
-    "publish-packages": "changeset publish"
+    "release": "changeset tag"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.1",
