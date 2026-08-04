@@ -1,5 +1,11 @@
 # @geniusgarage/docs
 
+## 1.0.2
+
+### Patch Changes
+
+- version test
+
 ## 1.0.1
 
 ### Patch Changes
