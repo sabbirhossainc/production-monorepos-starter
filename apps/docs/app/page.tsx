@@ -3,10 +3,10 @@ import { Card } from '@geniusgarage/ui/card'
  
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container px-4 py-8 m-32">
       <h1 className="text-4xl font-bold mb-4">{process.env.NEXT_PUBLIC_APP_NAME}</h1>
       <p className="text-gray-600 mb-8">
-        Component library documentation and examples
+        Component library documentation and examples 2
       </p>
  
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
